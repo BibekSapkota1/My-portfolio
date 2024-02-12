@@ -12,6 +12,8 @@ import Profile from './assets/images/Main.png'
 import circlearrow from './assets/icons/Conatctbelow.svg'
 import circles from './assets/icons/small-circle.svg'
 import rimage from './assets/icons/r-element.svg'
+
+import About from './Pages/About';
 import Home from './Pages/Home';
 
 
@@ -22,8 +24,11 @@ import Home from './Pages/Home';
 function App() {
   return (
 
-    <Home></Home>
+    <div>
+      <Home></Home>
+      <About></About>
 
+    </div>
 
 
 
