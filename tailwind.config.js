@@ -9,6 +9,12 @@ module.exports = {
 
         'smm': '370px',
       },
+      colors: {
+        'custom-gray': '#948DAA',
+        'custom-blue': '#F2F5FB',
+        'custom-red': '#FD562A',
+        'custom-grap': '#615978',
+      },
     },
   },
   plugins: [],
