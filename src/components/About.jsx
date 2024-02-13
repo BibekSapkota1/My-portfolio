@@ -77,7 +77,7 @@ export default function About() {
         <div
           className="bg-cover bg-no-repeat h-2/3 w-full"
           style={{ backgroundImage: `url(${Backgroun2})` }} >
-          <div className="container mx-auto flex flex-col lg:flex-row">
+          <div className="container mx-auto flex flex-col lg:flex-row p-2">
             <div className=" w-full h-100 mt-7 md:order-first md:flex-grow mb-4 md:mb-10">
               <h1 className='text-xl font-bold text-custom-red sm:text-3xl md:text-4xl '>MY SKILLS</h1>
               <h2 className='text-2xl mt-2 font-semibold text-white sm:text-5xl  md:mt-7 lg:text-5xl 2xl:text-6xl'>I'm Great In What I Do And I'm Loving It</h2>

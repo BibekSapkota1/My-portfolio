@@ -41,7 +41,7 @@ export default function Home() {
         <div className="flex items-center">
           <img src={LeftRectangle} alt="Left Rectangle" className="mr-1 smm:mr-3" />
           <h1 className="text-xl smm:text-2xl flex-shrink-0 font-bold">WELCOME TO MY WORLD</h1>
-          <img src={RightRectangle} alt="Right Rectangle" className="ml-1 smm:,ml-3" />
+          <img src={RightRectangle} alt="Right Rectangle" className="ml-1 smm:ml-3" />
         </div>
       </div>
       <p className='w5/12 text-center text-xl smm:text-2xl text-custom-gray mt-5 smm:mt-10 font-semibold '>I'm A Young Tech Enthasist And Entrepreneur Who Love To Take Risk.</p>

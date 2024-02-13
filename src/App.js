@@ -15,6 +15,8 @@ import rimage from './assets/icons/r-element.svg'
 
 import About from './components/About';
 import Home from './components/Home';
+import Portfolio from './components/Portfolio';
+import Service from './components/Service';
 
 
 
@@ -27,7 +29,10 @@ function App() {
     <div>
       <Home></Home>
       <About></About>
+      <Portfolio></Portfolio>
+      <Service></Service>
 
+      
     </div>
 
 
