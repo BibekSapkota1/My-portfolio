@@ -43,13 +43,13 @@ export default function About() {
     <div>
 
       <section>
-        <div class="w-100% bg-blue-50 smm:bg-yellow-900 sm:bg-green-500 md:bg-red-500 lg:bg-green-500 xl:bg-yellow-300 2xl:bg-blue-800">
+        <div class="w-100% bg-custom-blue">
           <div class="items-center">
             <div class="flex flex-wrap xl:container  xl:mx-auto  ">
               <div class="w-full lg:w-2/5 bg-red h-3/4 mt-3 flex items-center justify-center lg:order-0 smm:mt-5 sm:mt-9">
                 <img src={Group} alt="Group" class="p-3" />
               </div>
-              <div className='md:container md:mx-auto lg:bg-green-200  lg:w-3/5 '>
+              <div className='md:container md:mx-auto lg:w-3/5 '>
                 <div class="w-full bg-blue h-3/4 mt-1 flex flex-wrap  p-3 smm:mt-5 sm:mt-7 sm:p-5  ">
                   <h2 class="text-xl font-bold text-custom-red smm:text-2xl sm:text-4xl">ABOUT ME</h2>
                   <h1 class="text-xl font-bold mt-2 smm:text-2xl sm:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl xl:mt-6">Fresher UX/Ui & Frontend Developer From Nepal</h1>

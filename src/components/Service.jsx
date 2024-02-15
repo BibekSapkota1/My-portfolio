@@ -128,17 +128,17 @@ export default function Service() {
                                 <div className="grid grid-cols-1 gap-4 lg:gap-0">
                                     {reasons.map((reason) => (
 
-                                        <div key={reason.heading} className="  shadow-md lg:shadow-none p-0 flex flex-col  items-center">
+                                        <div key={reason.heading} className="  shadow-md lg:shadow-none flex flex-col  items-center">
                                             <div className="lg:flex lg:flex-row">
-                                                <div className="flex items-center justify-center ">
+                                                <div className="flex items-top justify-center ">
                                                     <img
                                                         src={reason.picture}
                                                         alt={reason.heading}
-                                                        className="w-24 h-24 mb-0 lg:w-20"
+                                                        className="w-24 h-24 mb-0 "
                                                     />
                                                 </div>
                                                 <div className="lg:grid lg:grid-cols-1 lg:col-span-2 p-2">
-                                                    <h4 className="text-xl 2xl:text-2xl font-bold text-center lg:text-left mb-1">{reason.heading}</h4>
+                                                    <h4 className="text-xl 2xl:text-2xl font-bold text-center lg:text-left ">{reason.heading}</h4>
                                                     <p className="text-gray-60 2xl:text-xl ">{reason.description}</p>
                                                 </div>
                                             </div>
@@ -146,7 +146,7 @@ export default function Service() {
                                     ))}
                                 </div>
                             </div>
-                            
+
                             <img src={line} alt="Right Rectangle" className="w-0 lg:w-14 lg:-mt-10 " />
                         </div>
                     </div>
