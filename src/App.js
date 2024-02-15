@@ -17,6 +17,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import Service from './components/Service';
+import Contact from './components/Contact';
 
 
 
@@ -31,8 +32,10 @@ function App() {
       <About></About>
       <Portfolio></Portfolio>
       <Service></Service>
+      <Contact></Contact>
 
-      
+
+
     </div>
 
 
