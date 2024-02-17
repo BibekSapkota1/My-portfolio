@@ -13,11 +13,8 @@ import circlearrow from './assets/icons/Conatctbelow.svg'
 import circles from './assets/icons/small-circle.svg'
 import rimage from './assets/icons/r-element.svg'
 
-import About from './components/About';
-import Home from './components/Home';
-import Portfolio from './components/Portfolio';
-import Service from './components/Service';
-import Contact from './components/Contact';
+import Home from './Pages/Home';
+
 
 
 
@@ -29,10 +26,8 @@ function App() {
 
     <div>
       <Home></Home>
-      <About></About>
-      <Portfolio></Portfolio>
-      <Service></Service>
-      <Contact></Contact>
+
+      {/* <Contact></Contact> */}
 
 
 

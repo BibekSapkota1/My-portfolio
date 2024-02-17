@@ -82,7 +82,7 @@ export default function Service() {
                         challenging, making it difficult to feel like what you do is important. </p>
                     <div className="container mx-auto py-12  px-2  lg:px-20  xl:px-40  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
                         {boxesData.map((data) => (
-                            <div key={data.id} className="group xl:gap-8 opacity-60 rounded-3xl border border-solid border-gray-200 hover:shadow-2xl bg-custom-3-gray hover:opacity-100  transition duration-200 hover:-translate-y-10  ">
+                            <div key={data.id} className="group xl:gap-8 opacity-60 rounded-3xl border border-solid border-gray-200 hover:shadow-2xl bg-custom-3-gray hover:opacity-100  transition duration-200  lg:hover:-translate-y-10  ">
                                 <div className="flex items-center justify-center relative mt-20">
                                     {/* Add a blue circle as background */}
                                     <div className="absolute  w-20 h-20 rounded-full bg-custom-4-gray opacity-80 z-10"></div>
