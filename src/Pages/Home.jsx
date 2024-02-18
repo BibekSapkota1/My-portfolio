@@ -4,6 +4,7 @@ import Landing from '../components/Home';
 import About from '../components/About';
 import Portfolio from '../components/Portfolio';
 import Service from '../components/Service';
+import "../index.css"
 // import Client from '../component/Client';
 // import Contact from '../component/Contact';
 // import Footer from '../component/Footer';
@@ -19,7 +20,7 @@ export default function Home({ data }) {
 
     return (
         <div>
-           
+
             <div>
                 <Landing></Landing>
                 <About></About>

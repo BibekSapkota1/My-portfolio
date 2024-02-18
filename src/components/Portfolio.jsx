@@ -80,7 +80,7 @@ export default function Portfolio() {
 
 
     return (
-        <div>
+        <div id='portfolio'>
             <section>
                 <div className="flex justify-center mt-5">
                     <div className="flex items-center">

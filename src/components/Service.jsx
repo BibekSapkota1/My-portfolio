@@ -67,7 +67,7 @@ const reasons = [
 export default function Service() {
 
     return (
-        <div>
+        <div id='service'>
 
             <section>
                 <div className=' bg-custom-2-gray h-full'>

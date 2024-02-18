@@ -40,7 +40,7 @@ const categories = [
 
 export default function About() {
   return (
-    <div>
+    <div id='about'>
 
       <section>
         <div class="w-100% bg-custom-blue">
