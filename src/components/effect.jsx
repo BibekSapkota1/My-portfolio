@@ -10,7 +10,7 @@ function Title() {
         const intervalId = setInterval(() => {
             if (letterIndex < words[currentWordIndex].length) {
                 // Add next letter
-                setText(prevText => prevText + words[currentWordIndex][letterIndex]) /***/
+                setText(prevText => prevText + words[currentWordIndex][letterIndex]) 
                 setLetterIndex(letterIndex + 1)
             } else {
                 // Move to next word or restart (circularly)

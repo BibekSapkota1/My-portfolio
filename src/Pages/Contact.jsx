@@ -1,9 +1,16 @@
 import React from 'react'
-import Navbar from "../components/Navbar"
+import reach from "../components/Conatct_details"
+import Header from '../components/Header'
+import Conatct_details from '../components/Conatct_details'
+
+
 function Contact() {
     return (
-        <div>
-            <Navbar />
+        <div  >
+            <Header />
+            <Conatct_details />
+
+
         </div>
     )
 }

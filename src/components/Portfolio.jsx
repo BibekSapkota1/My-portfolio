@@ -80,7 +80,7 @@ export default function Portfolio() {
 
 
     return (
-        <div id='portfolio'>
+        <div id='portfolio' >
             <section>
                 <div className="flex justify-center mt-5">
                     <div className="flex items-center">
@@ -113,7 +113,7 @@ export default function Portfolio() {
                             <img
                                 src={project.imageUrl}
                                 alt={project.title}
-                                className="w-26 h-20 p-4  object-cover rounded-md transition duration-200 ease-in-out transform group-hover:scale-105"
+                                className="w-26 h-20 p-4  object-cover rounded-md transition duration-200 ease-in-out "
                             />
                             <div className="p-4">
                                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>

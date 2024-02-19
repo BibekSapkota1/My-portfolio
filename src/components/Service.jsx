@@ -4,7 +4,7 @@ import Mobile from '../assets/icons/FaMobileAlt.svg';
 import Web from '../assets/icons/MdOutlineDesktopMac.svg';
 import Graphics from '../assets/icons/RiImageEditFill.svg';
 import Ui from '../assets/icons/RiPagesLine.svg';
-import Halfcircle from '../assets/icons/service-element-3 1.png'
+import Halfcircle from '../assets/icons/service-element-3 1.svg'
 import features from '../assets/images/feature.png'
 import support from '../assets/icons/support.svg'
 import coding from '../assets/icons/coding.svg'

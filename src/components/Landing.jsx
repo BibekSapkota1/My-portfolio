@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Background from '../assets/images/background.png';
 import LeftRectangle from '../assets/icons/Rectangle 3.svg';
@@ -10,8 +9,8 @@ import rimage from '../assets/icons/r-element.svg'
 import circlearrow from '../assets/icons/Conatctbelow.svg'
 import Profile from '../assets/images/Main.png'
 import Title from './effect';
-import Navbar from './Navbar'
 import Social_Media from './Social_Media';
+import Header from './Header';
 
 
 const CARD_IMAGE_HEIGHT = '190px ';
@@ -34,103 +33,42 @@ const cardData = [
   },
 ];
 
-// function Title() {
-//   const [text, setText] = useState('Designer');
-//   const [isAnimating, setIsAnimating] = useState(false);
-
-
-//   useEffect(() => {
-//     const intervalId = setInterval(() => {
-//       setIsAnimating(true);
-//       const nextText = text === 'Designer' ? 'Developer' : 'Designer';
-//       setText(nextText);
-//       setTimeout(() => {
-//         setIsAnimating(false);
-//       }, 1000); // Adjust timing as needed
-//     }, 2000); // Adjust interval as needed
-
-//     return () => clearInterval(intervalId);
-//   }, []);
-
-
-
-
-
-
-
 
 export default function Landing() {
   return (
-    <div>
+    <div id='home' className='pt-16'>
 
-      <div className="bg-no-repeat bg-cover bg-center h-screen w-100%"
-        style={{ backgroundImage: `url(${Background})` }} >
-        <Navbar />
+      <section>
+        <div className="bg-no-repeat bg-cover bg-center h-screen w-100%"
+          style={{ backgroundImage: `url(${Background})` }} >
+          <div class="container mx-auto flex flex-col lg:flex-row h-screen">
+            <div class="w-full lg:w-1/2 h-1/3 lg:h-full order-1 lg:order-2 pb-5 lg:pb-0">
+              <img src={Profile} alt="Profile pic" class="mx-auto lg:flex  item-center justify-center h-full lg:h-2/3 lg:mt-20" />
 
-        <div class="container mx-auto flex flex-col lg:flex-row h-screen">
-          <div class="w-full lg:w-1/2 h-1/3 lg:h-full order-1 lg:order-2 pb-5 lg:pb-0">
-            <img src={Profile} alt="Profile pic" class="mx-auto lg:flex  item-center justify-center h-full lg:h-2/3 lg:mt-20" />
+            </div>
+            <div class="w-full h-2/3 lg:h-full lg:w-1/2 order-2 lg:order-1 flex flex-col items-center justify-center  mt-0  ">
+              <h4 class="text-white text-3xl smm:text-4xl  font-bold">Hello, I'm</h4>
+              <h2 class="text-white text-6xl smm:text-7xl lg:text-8xl font-bold">Bibek</h2>
+              <h1 class="text-custom-red text-6xl smm:text-7xl lg:text-8xl font-bold">Sapkota</h1>
+              <Title />
+              <p class="text-white text-2xl  smm:text-3xl md:pl-20 lg:pl-0 lg:text-4xl   font-semibold p-3">A fresher UX/Ui & Frontend Developer from Kathmandu, Nepal!</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2  gap-0   ">
 
-          </div>
+                <div className='order:1 sm:order-2 items-center lg:mt-3'>
+                  <Social_Media />
+                </div>
+                <div className=' order:2 sm:order-1 text-center'>
+                  <button class="btn bg-custom-red hover:bg-red-700 text-white font-bold py-3 px-10 rounded shadow mt-3 ">
+                    Contact me
+                  </button>
+                  <img src={circlearrow} alt="loading.." class="px-3 -mt-3  " />
 
-          <div class="w-full h-2/3 lg:h-full lg:w-1/2 order-2 lg:order-1 flex flex-col items-center justify-center  mt-0  ">
-            <h4 class="text-white text-3xl smm:text-4xl  font-bold">Hello, I'm</h4>
-            <h2 class="text-white text-6xl smm:text-7xl lg:text-8xl font-bold">Bibek</h2>
-            <h1 class="text-custom-red text-6xl smm:text-7xl lg:text-8xl font-bold">Sapkota</h1>
-            <Title />
-            
-            <p class="text-white text-2xl  smm:text-3xl md:pl-20 lg:pl-0 lg:text-4xl   font-semibold p-3">A fresher UX/Ui & Frontend Developer from Kathmandu, Nepal!</p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2  gap-0   ">
-
-              <div className='order:1 sm:order-2 items-center lg:mt-3'>
-                <Social_Media />
-              </div>
-              <div className=' order:2 sm:order-1 text-center'>
-                <button class="btn bg-custom-red hover:bg-red-700 text-white font-bold py-3 px-10 rounded shadow mt-3 ">
-                  Contact me
-                </button>
-                <img src={circlearrow} alt="loading.." class="px-3 -mt-3  " />
-
+                </div>
               </div>
             </div>
-
-
-
-
-
           </div>
         </div>
-
-
-
-
-
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </section>
 
       <section >
         <div class="bg-top-left bg-no-repeat">
@@ -169,6 +107,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
+
     </div >
 
 
