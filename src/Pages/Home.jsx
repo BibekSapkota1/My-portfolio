@@ -6,14 +6,18 @@ import Service from '../components/Service';
 import "../index.css"
 import Header from '../components/Header';
 import Footer from '../components/footer';
+import { useEffect, useState } from 'react';
 
 
 export default function Home({ data }) {
 
+
+
     return (
-        <div>
+        <div className='dark:bg-custom-dark'>
 
             <div>
+
                 <Header></Header>
                 <Landing></Landing>
                 <About></About>
@@ -24,9 +28,10 @@ export default function Home({ data }) {
 
             </div>
 
-
-
-
         </div>
+
+
+
+
     )
 }

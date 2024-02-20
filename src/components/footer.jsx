@@ -1,12 +1,13 @@
 import Social_Media from "./Social_Media";
+import React from "react";
 
 
 export default function Footer() {
     return (
-        <div className="bg-blue-400">
+        <div className="bg-gradient-to-r from-black to-gray-800">
             <div class=" mt-0 flex flex-col items-center ">
                 <div class="p-4 w-full lg:w-1/2 container ">
-                    <h1 class="text-5xl font-bold text-center mt-10">Bibek</h1>
+                    <h1 class="text-5xl font-Greatvibe font-bold text-center mt-10 text-white ">Bibek</h1>
                     <p class="text-center  -text-xl sm:text-xl lg:text-3xl mt-4 font-semibold text-custom-gray">Kilaboris do not come out unless some of it is useful for the purpose of the person's desire.</p>
                     <div className="flex flex-col items-center mt-4">
                         <Social_Media />

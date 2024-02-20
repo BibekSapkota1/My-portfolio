@@ -47,11 +47,11 @@ export default function Landing() {
 
             </div>
             <div class="w-full h-2/3 lg:h-full lg:w-1/2 order-2 lg:order-1 flex flex-col items-center justify-center  mt-0  ">
-              <h4 class="text-white text-3xl smm:text-4xl  font-bold">Hello, I'm</h4>
-              <h2 class="text-white text-6xl smm:text-7xl lg:text-8xl font-bold">Bibek</h2>
-              <h1 class="text-custom-red text-6xl smm:text-7xl lg:text-8xl font-bold">Sapkota</h1>
+              <h4 class="text-white text-3xl smm:text-4xl font-poppins  font-bold">Hello, I'm</h4>
+              <h2 class="text-white text-6xl smm:text-7xl lg:text-8xl font-poppins  font-bold">Bibek</h2>
+              <h1 class="text-custom-red text-6xl smm:text-7xl lg:text-8xl font-poppins  font-bold">Sapkota</h1>
               <Title />
-              <p class="text-white text-2xl  smm:text-3xl md:pl-20 lg:pl-0 lg:text-4xl   font-semibold p-3">A fresher UX/Ui & Frontend Developer from Kathmandu, Nepal!</p>
+              <p class="text-white text-2xl   smm:text-3xl md:pl-20 lg:pl-0 lg:text-4xl   font-semibold p-3">A fresher UX/Ui & Frontend Developer from Kathmandu, Nepal!</p>
               <div className="grid grid-cols-1 sm:grid-cols-2  gap-0   ">
 
                 <div className='order:1 sm:order-2 items-center lg:mt-3'>
@@ -70,26 +70,26 @@ export default function Landing() {
         </div>
       </section>
 
-      <section >
-        <div class="bg-top-left bg-no-repeat">
+      <section className='dark:bg-custom-dark dark:text-white'>
+        <div class="bg-top-left bg-no-repeat ">
           <img src={rimage} alt="loading.." class="px-3   object-cover" />
         </div>
 
-        <div className="flex justify-center mt-5">
+        <div className="flex justify-center mt-5 ">
           <div className="flex items-center">
             <img src={LeftRectangle} alt="Left Rectangle" className="mr-1 smm:mr-3" />
-            <h1 className="text-xl smm:text-2xl flex-shrink-0 font-bold">WELCOME TO MY WORLD</h1>
+            <h1 className="text-xl smm:text-2xl flex-shrink-0 font-bold font-poppins ">WELCOME TO MY WORLD</h1>
             <img src={RightRectangle} alt="Right Rectangle" className="ml-1 smm:ml-3" />
           </div>
         </div>
-        <p className='w5/12 text-center text-xl smm:text-2xl text-custom-gray mt-5 smm:mt-10 font-semibold '>I'm A Young Tech Enthasist And Entrepreneur Who Love To Take Risk.</p>
+        <p className='w5/12 text-center  text-xl smm:text-2xl text-custom-gray ark:text-custom-dark-text mt-5 smm:mt-10 font-semibold '>I'm A Young Tech Enthasist And Entrepreneur Who Love To Take Risk.</p>
 
-        <div className="container mx-auto px-4 flex flex-col items-center mt-16 mb-20">
-          <div className="flex flex-wrap gap-4 justify-center">
+        <div className="container mx-auto px-4 flex flex-col items-center mt-16 mb-20  ">
+          <div className="flex flex-wrap gap-4 justify-center  ">
             {cardData.map((card, index) => (
               <div
                 key={index}
-                className="bg-gray shadow-xl rounded-lg overflow-hidden w-full max-w-md p-1 smm:p-8 flex flex-col items-center"
+                className="bg-gray shadow-xl rounded-lg overflow-hidden w-full max-w-md p-1 smm:p-8 flex flex-col items-center dark:bg-custom-2-dark "
               >
                 <img
                   src={card.image}
@@ -98,8 +98,8 @@ export default function Landing() {
                   style={{ height: CARD_IMAGE_HEIGHT }}
                 />
                 <div className="p-4">
-                  <h2 className="text-2xl font-bold text-center">{card.title}</h2>
-                  <p className="text-gray-700 text-center ">{card.text}</p>
+                  <h2 className="text-2xl font-bold text-center font-poppins  ">{card.title}</h2>
+                  <p className="text-gray-700 text-center dark:text-custom-dark-text ">{card.text}</p>
                 </div>
 
               </div>

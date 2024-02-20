@@ -43,7 +43,7 @@ export default function About() {
     <div id='about'>
 
       <section>
-        <div class="w-100% bg-custom-blue">
+        <div class="w-100% bg-custom-blue  dark:bg-custom-3-dark">
           <div class="items-center">
             <div class="flex flex-wrap xl:container  xl:mx-auto  ">
               <div class="w-full lg:w-2/5 bg-red h-3/4 mt-3 flex items-center justify-center lg:order-0 smm:mt-5 sm:mt-9">
@@ -51,17 +51,17 @@ export default function About() {
               </div>
               <div className='md:container md:mx-auto lg:w-3/5 '>
                 <div class="w-full bg-blue h-3/4 mt-1 flex flex-wrap  p-3 smm:mt-5 sm:mt-7 sm:p-5  ">
-                  <h2 class="text-xl font-bold text-custom-red smm:text-2xl sm:text-4xl">ABOUT ME</h2>
-                  <h1 class="text-xl font-bold mt-2 smm:text-2xl sm:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl xl:mt-6">Fresher UX/Ui & Frontend Developer From Nepal</h1>
-                  <p class="-text-xl font-normal text-justify mt-2 smm:mt-5 sm:text-xl xl:mt-6">
+                  <h2 class="text-xl font-bold text-custom-red  smm:text-2xl sm:text-4xl">ABOUT ME</h2>
+                  <h1 class="text-xl font-poppins dark:text-white  font-bold mt-2 smm:text-2xl sm:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl xl:mt-6">Fresher UX/Ui & Frontend Developer From Nepal</h1>
+                  <p class="-text-xl font-normal dark:text-custom-dark-text text-justify mt-2 smm:mt-5 sm:text-xl xl:mt-6">
                     UX/Ui & Frontend developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations. <br />
                     Visual design seeks to attract, inspire, create desires and motivate people to respond to messages, with a view to making a favorable impact.
                   </p>
                   <div class="grid grid-cols-2 gap-4 w-full mt-2 smm:mt-3 sm:mt-5 xl:mt-7">
                     {Details.map((detail, index) => (
                       <div key={index} class="flex flex-col">
-                        <div class="text-black-500 font-bold -text-xl sm:text-xl uppercase">{detail.title}</div>
-                        <div class="text-gray-700 -text-xl sm:text-xl xl:mt-1">{detail.text}</div>
+                        <div class="text-black-500 dark:text-white font-bold -text-xl sm:text-xl font-poppins  uppercase">{detail.title}</div>
+                        <div class="text-gray-700 dark:text-custom-dark-text -text-xl sm:text-xl xl:mt-1">{detail.text}</div>
                       </div>
                     ))}
                   </div>
@@ -90,7 +90,7 @@ export default function About() {
               <div className="container mx-auto px-4 flex flex-col items-center justify-center ">
                 {categories.map((category, index) => (
                   <div key={index} className="mb-4 flex flex-col">  {/* Left-aligned text using Tailwind CSS */}
-                    <h3 className="text-white font-bold text-lg text-left">{category.name}</h3>  {/* Progress bar container below the text */}
+                    <h3 className="text-white font-poppins  font-bold text-lg text-left">{category.name}</h3>  {/* Progress bar container below the text */}
                     <div className="mt-2 flex items-center">    {/* Long progress bar with left-aligned text */}
                       <div className="w-64 sm:w-96  bg-gray-200 rounded-full overflow-hidden h-2">
                         <div

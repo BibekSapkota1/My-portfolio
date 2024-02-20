@@ -80,16 +80,16 @@ export default function Portfolio() {
 
 
     return (
-        <div id='portfolio' >
-            <section>
+        <div id='portfolio'  >
+            <section className='dark:bg-custom-dark'>
                 <div className="flex justify-center mt-5">
                     <div className="flex items-center">
                         <img src={LeftRectangle} alt="Left Rectangle" className="mr-1 smm:mr-3" />
-                        <h1 className="text-xl smm:text-2xl flex-shrink-0 font-bold">PORTFOLIO</h1>
+                        <h1 className="text-xl font-poppins dark:text-white  smm:text-2xl flex-shrink-0 font-bold">PORTFOLIO</h1>
                         <img src={RightRectangle} alt="Right Rectangle" className="ml-1 smm:ml-3" />
                     </div>
                 </div>
-                <p className='w5/12 text-center text-xl smm:text-2xl text-custom-gray mt-5 smm:mt-10 font-semibold '>Explore some of the projects I have worked on.</p>
+                <p className='w5/12 text-center text-xl smm:text-2xl text-custom-gray dark:text-custom-dark-text  mt-5 smm:mt-10 font-semibold '>Explore some of the projects I have worked on.</p>
 
 
                 <div className="container mx-auto px-4 mt-10">
@@ -99,7 +99,7 @@ export default function Portfolio() {
                                 key={index}
                                 className={`mx-1 py-1 px-2 text-sm font-medium rounded-md   sm:mx-2 smm:py-2 smm:px-4 sm:px-6 ${selectedCategory === category
                                     ? 'bg-custom-red text-white'
-                                    : 'text-gray-700 border border-gray-300 hover:bg-gray-200'
+                                    : 'text-gray-700 border dark:text-white dark:hover:bg-gray-500 border-gray-300 hover:bg-gray-200'
                                     }`}
                                 onClick={() => setSelectedCategory(category)}
                             >
@@ -108,22 +108,22 @@ export default function Portfolio() {
                         ))}
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 "> {filteredProjects.map((project) => (
-                        <div key={project.id} className="group shadow-md hover:shadow-lg">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  "> {filteredProjects.map((project) => (
+                        <div key={project.id} className="group shadow-sm rounded-xl hover:shadow-lg dark:bg-custom-4-dark dark:border dark:border-gray-500  transition-transform duration-300 transform hover:scale-105 ">
                             <img
                                 src={project.imageUrl}
                                 alt={project.title}
-                                className="w-26 h-20 p-4  object-cover rounded-md transition duration-200 ease-in-out "
+                                className="w-26 h-20 p-4   object-cover rounded-md transition duration-200 ease-in-out  "
                             />
                             <div className="p-4">
-                                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                                <h4 className='-text-xl font-bold text-gray-700 mb-2'>Project-Type: {project.type}</h4>
-                                <p className="text-sm font-semibold text-gray-700 mb-4">{project.description}</p>
+                                <h3 className="text-xl font-poppins dark:text-white  font-bold mb-2">{project.title}</h3>
+                                <h4 className='-text-xl font-bold text-gray-700 dark:text-custom-dark-text  mb-2'>Project-Type: {project.type}</h4>
+                                <p className="text-sm font-semibold text-gray-700 dark:text-custom-dark-text  mb-4">{project.description}</p>
                                 <a
                                     href={project.projectUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-block px-3 py-2 text-sm font-semibold rounded-md text-custom-red hover:bg-red-200"
+                                    className="inline-block px-3 py-2 text-sm font-semibold rounded-md text-custom-red hover:bg-red-200 dark:hover:bg-red-900 "
                                 >
                                     View Project
                                 </a>

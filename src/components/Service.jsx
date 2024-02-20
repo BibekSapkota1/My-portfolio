@@ -74,7 +74,7 @@ export default function Service() {
                     <div className="flex justify-center mt-5">
                         <div className="flex items-center mt-10">
                             <img src={LeftRectangle} alt="Left Rectangle" className="mr-1 smm:mr-3" />
-                            <h1 className="text-xl smm:text-2xl flex-shrink-0 text-white font-bold">SERVICE</h1>
+                            <h1 className="text-xl font-poppins  smm:text-2xl flex-shrink-0 text-white font-bold">SERVICE</h1>
                             <img src={RightRectangle} alt="Right Rectangle" className="ml-1 smm:ml-3" />
                         </div>
                     </div>
@@ -96,7 +96,7 @@ export default function Service() {
 
                                 </div>
                                 <div className="p-4 ">
-                                    <h3 className="text-xl text-center text-white font-bold mb-2">{data.title}</h3>
+                                    <h3 className="text-xl text-center text-white font-bold mb-2 font-poppins ">{data.title}</h3>
                                     <p className="text-sm text-white text-center mb-4">{data.paragraph}</p>
                                     <a
                                         href="#" // Replace with your "Read More" link
@@ -114,7 +114,7 @@ export default function Service() {
 
 
             <section>
-                <div class="w-100% bg-custom-blue ">
+                <div class="w-100% bg-custom-blue dark:bg-custom-3-dark ">
                     <div class="items-center">
                         <div class="flex flex-wrap xl:container  xl:mx-auto  ">
                             <div class="w-full lg:w-2/5 bg-red   flex items-center justify-center lg:order-0">
@@ -123,8 +123,8 @@ export default function Service() {
 
                             <div className=" sm:container lg:w-3/5 items-center justify-center mx-auto p-2 lg:mt-5">
                                 <h2 className="-text-xl smm:text-xl md:text-3xl lg:text-xl xl:text-2xl font-semibold text-left text-custom-red mt-7">WHY WORK WITH ME</h2>
-                                <h3 className="text-2xl smm:text-3xl md:text-5xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-bold text-left ">Best Result With Top User Experience</h3>
-                                <p className="text-sm  smm:text-xl md:text-2xl lg:text-xl 2xl:text-2xl text-left text-custom-grap lg:mb-0 mb-7">In a world filled with choices, what sets me apart? Here are a few compelling reasons why you should consider working with me:</p>
+                                <h3 className="text-2xl smm:text-3xl md:text-5xl lg:text-3xl xl:text-5xl font-poppins dark:text-white  2xl:text-6xl font-bold text-left ">Best Result With Top User Experience</h3>
+                                <p className="text-sm  smm:text-xl md:text-2xl lg:text-xl 2xl:text-2xl text-left text-custom-grap dark:text-custom-dark-text lg:mb-0 mb-7">In a world filled with choices, what sets me apart? Here are a few compelling reasons why you should consider working with me:</p>
                                 <div className="grid grid-cols-1 gap-4 lg:gap-0">
                                     {reasons.map((reason) => (
 
@@ -138,8 +138,8 @@ export default function Service() {
                                                     />
                                                 </div>
                                                 <div className="lg:grid lg:grid-cols-1 lg:col-span-2 p-2">
-                                                    <h4 className="text-xl 2xl:text-2xl font-bold text-center lg:text-left ">{reason.heading}</h4>
-                                                    <p className="text-gray-60 2xl:text-xl ">{reason.description}</p>
+                                                    <h4 className="text-xl font-poppins dark:text-white   2xl:text-2xl font-bold text-center lg:text-left ">{reason.heading}</h4>
+                                                    <p className="text-gray-600 dark:text-custom-dark-text 2xl:text-xl  ">{reason.description}</p>
                                                 </div>
                                             </div>
                                         </div>

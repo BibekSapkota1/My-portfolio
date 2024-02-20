@@ -16,6 +16,8 @@ import rimage from './assets/icons/r-element.svg'
 import Home from './Pages/Home';
 import { Route, Routes } from 'react-router-dom';
 import Contact from './Pages/Contact';
+import { useState, useEffect } from 'react';
+import React from 'react';
 
 
 
@@ -24,14 +26,23 @@ import Contact from './Pages/Contact';
 
 
 function App() {
+
+  
+
+
   return (
     <div>
-
+     
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
       </Routes>
+      
     </div>
+    
+    
+    
+
 
 
 
