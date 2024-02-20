@@ -25,7 +25,10 @@ module.exports = {
         'custom-3-dark': '#2A2A2A',
         'custom-4-dark': '#2D2D2D',
         'custom-dark-text': '#B0AAC0',
-    
+        'Facebook-color': '#4267B2',
+        'linkdine-color': '#0077b5',
+        'Github-color': '#4078c0',
+
       },
       fontFamily: {
 
