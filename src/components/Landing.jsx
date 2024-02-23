@@ -8,7 +8,7 @@ import Gem from '../assets/icons/FaGem.svg'
 import rimage from '../assets/icons/r-element.svg'
 import circlearrow from '../assets/icons/Conatctbelow.svg'
 import Profile from '../assets/images/Main.png'
-import Title from './effect';
+import Title from './Effect'
 import Social_Media from './Social_Media';
 import Header from './Header';
 
@@ -58,8 +58,11 @@ export default function Landing() {
                   <Social_Media />
                 </div>
                 <div className=' order:2 sm:order-1 text-center'>
-                  <button class="btn bg-custom-red hover:bg-red-700 text-white font-bold py-3 px-10 rounded shadow mt-3 ">
+                  {/* <button class="btn bg-custom-red hover:bg-red-700 text-white font-bold py-3 px-10 rounded shadow mt-3  ">
                     Contact me
+                  </button> */}
+                  <button class="bg-custom-red hover:bg-red-500 text-white font-bold py-3 px-10 mt-3 rounded-xl shadow-lg hover:text-white shadow-gray-900 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
+                    Contact Me
                   </button>
                   <img src={circlearrow} alt="loading.." class="px-3 -mt-3  " />
 
@@ -89,7 +92,7 @@ export default function Landing() {
             {cardData.map((card, index) => (
               <div
                 key={index}
-                className="bg-gray shadow-xl rounded-lg overflow-hidden w-full max-w-md p-1 smm:p-8 flex flex-col items-center dark:bg-custom-2-dark "
+                className="bg-gray shadow-xl rounded-lg overflow-hidden w-full max-w-md p-1 smm:p-8 flex flex-col items-center dark:bg-custom-2-dark dark:border dark:border-gray-500  "
               >
                 <img
                   src={card.image}

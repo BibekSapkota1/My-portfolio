@@ -1,4 +1,4 @@
-import Footer from '../components/footer';
+import Footer from './Footer';
 import { useEffect, useState } from 'react';
 import sun from '../assets/icons/Sun.svg'
 import Moon from '../assets/icons/Moon.svg'

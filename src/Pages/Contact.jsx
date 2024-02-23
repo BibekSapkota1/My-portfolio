@@ -2,7 +2,7 @@ import React from 'react'
 import reach from "../components/Conatct_details"
 import Header from '../components/Header'
 import Conatct_details from '../components/Conatct_details'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 
 
 function Contact() {

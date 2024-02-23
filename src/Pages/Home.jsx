@@ -5,7 +5,7 @@ import Portfolio from '../components/Portfolio';
 import Service from '../components/Service';
 import "../index.css"
 import Header from '../components/Header';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import { useEffect, useState } from 'react';
 
 

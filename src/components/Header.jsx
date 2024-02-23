@@ -14,14 +14,18 @@ const Header = () => {
     ];
     const [open, setOpen] = useState(false);
     const handleScroll = (id) => {
-        const item = document.getElementById(id);
-        if (item) {
-            window.scrollTo({
-                top: item.offsetTop - 60,
-                behavior: "auto"
-            })
-        }
+        setTimeout(() => { // Delaying the execution
+            const item = document.getElementById(id);
+            if (item) {
+                window.scrollTo({
+                    top: item.offsetTop - 60,
+                    behavior: "auto"
+                });
+            }
+        }, 100); // Delay of 1000 milliseconds (1 second)
     }
+
+
     return (
         // 
         <div className='shadow-md  w-full fixed bg-gray-900 z-10 '>
@@ -38,7 +42,7 @@ const Header = () => {
                 <ul className={`lg:flex lg:items-center lg:pb-0 pb-12 font-poppins  lg:mr-20 absolute lg:static bg-white dark:bg-custom-2-dark lg:dark:bg-transparent lg:bg-transparent   lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
                     {Links.map((link) => (
                         <li className='lg:ml-8 lg:my-0 my-7 font-semibold'>{/* font-semibold is a tailwind class for making the text semi-bold */}
-                            <Link onClick={() => { handleScroll(link.link.slice(1)) }} className='text-gray-800  dark:text-white   lg:text-white text-xl hover:text-red-500 duration-500' to={`/${link.link}`}>{link.name}</Link>
+                            <Link onClick={() => { handleScroll(link.link.slice(1)); setOpen(!open) }} className='text-gray-800  dark:text-white   lg:text-white text-xl hover:text-red-500 duration-500' to={`/${link.link}`}>{link.name}</Link>
                         </li>
                     ))}
                     <Link className='lg:ml-8 lg:my-0 my-7 font-semibold text-gray-800 dark:text-white lg:text-white text-xl hover:text-red-500 duration-500' to="/contact">Contact</Link>

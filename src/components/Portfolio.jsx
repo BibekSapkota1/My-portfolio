@@ -109,7 +109,7 @@ export default function Portfolio() {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  "> {filteredProjects.map((project) => (
-                        <div key={project.id} className="group shadow-sm rounded-xl hover:shadow-lg dark:bg-custom-4-dark dark:border dark:border-gray-500  transition-transform duration-300 transform hover:scale-105 ">
+                        <div key={project.id} className="group shadow-sm rounded-xl hover:shadow-lg dark:bg-custom-4-dark dark:border dark:border-gray-500 transition-transform duration-300 transform hover:scale-105 ">
                             <img
                                 src={project.imageUrl}
                                 alt={project.title}
